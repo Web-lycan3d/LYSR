@@ -87,7 +87,7 @@ function handleValidationError(err, body) {
     }
 }
 
-var PORT = process.env.PORT || 5050;
+var PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`)
 })
