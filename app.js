@@ -54,7 +54,7 @@ function insertRecord(req, res) {
     user.save((err, docs) => {
         if (!err)
             res.render("contact-success", {
-                title: 'Contact'
+                title: 'LYSR|CONTACT'
             });
         else {
             console.log('error in recording ' + err);

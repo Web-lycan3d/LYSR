@@ -42,8 +42,8 @@
 /* navigation */
 .main-logo {
   position: fixed;
-  width: 8%;
-  top: 15%;
+  width: 7%;
+  top: 10%;
   left: 2%;
   z-index: 1050;
 }
@@ -291,6 +291,9 @@ footer {
   }
   .footer-upper-container > .footer-logo {
     width: 35%;
+  }
+  .footer-lower-container > span {
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 340px) {
