@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/landing.css">
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    {{>header}}
+    <section class=" ly-hide-small">
+        <div class="ly-relative">
+            <img src="https://i.ibb.co/F3D05y9/ROCKET-PARTS-BACKGROUND.png" alt="" class="ly-image">
+            <div class="landing-text">
+                <h1>Hello there.</h1>
+                <p>If you think space is where our world comes to an end, we would like to remind you that there are
+                    already footsteps on the moon, rovers on Mars and satellites beyond Pluto. Scientific breakthroughs
+                    are constantly challenging our assumptions and pushing our boundaries by exploring the unknown. At
+                    Lycan Space Research (LYSR), we aim to identify unique opportunities in space that can solve
+                    problems across various industries.</p>
+            </div>
+            <div class="rocket">
+                <img src="https://i.ibb.co/72Fd8JT/rocket.png" alt="" class="ly-image" data-aos=fade-up-left
+                    style="transition-delay: 500ms;">
+            </div>
+            <div class="smoke">
+                <img src="https://i.ibb.co/fNHX4jq/lines.png" alt="" class="ly-image" data-aos=fade-up-left
+                    style="transition-delay: 800ms;">
+            </div>
+        </div>
+    </section>
+    <section class="ly-hide-medium ly-hide-large">
+        <div class="ly-relative">
+            <img src="https://i.ibb.co/FWw5PjR/rocket.png" alt="" class="ly-image">
+            <div class="landing-text-mob">
+                <h1>Hello there.</h1>
+                <p>If you think space is where our world comes to an end, we would like to remind you that there are
+                    already footsteps on the moon, rovers on Mars and satellites beyond Pluto. Scientific breakthroughs
+                    are constantly challenging our assumptions and pushing our boundaries by exploring the unknown. At
+                    Lycan Space Research (LYSR), we aim to identify unique opportunities in space that can solve
+                    problems across various industries.</p>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+        var preloader = document.getElementById("loading")
+        function myFunction() {
+            preloader.style.display = 'none';
+        };
+    </script>
+</body>
+
+</html>

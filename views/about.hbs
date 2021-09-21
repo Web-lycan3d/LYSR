@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    {{>header}}
+    <section class="ly-hide-small">
+        <div class="ly-relative" style="overflow:hidden">
+            <div class="about-container">
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <p>We are a Bangalore-based space tech startup, aspiring to create a paradigm shift in utilizing
+                        space for the benefit of mankind through enhancing space technology and pursuing space research.
+                        At Lycan Space Research (LYSR), we firmly believe that research in space can bring improvements
+                        to our life on Earth and we are continually pioneering investigations, testing theories and
+                        pushing the boundaries of our knowledge of what lies beyond our planet.</p>
+                </div>
+                <div class="about-img">
+                    <div class="about-img-oneside">
+                        <img src="https://i.ibb.co/ccgn4Dh/campaign-creators-g-Msn-Xq-ILjp4-unsplash.png" alt=""
+                            class="ly-image">
+                        <img src="https://i.ibb.co/y8MWmXX/scott-graham-5f-Nm-Wej4t-AA-unsplash-1.png" alt=""
+                            class="ly-image">
+                    </div>
+                    <div class="about-img-otherside">
+                        <img src="https://i.ibb.co/SdgvQTf/annie-spratt-MCh-SQHx-GZr-Q-unsplash-1.png" alt=""
+                            class="ly-image">
+                    </div>
+                </div>
+            </div>
+            <div class="right-ball">
+                <img src="/images/Group 5027.svg" alt="" class="ly-image">
+            </div>
+            <div class="bottom-ball">
+                <img src="/images/Group 5027.svg" alt="" class="ly-image">
+            </div>
+        </div>
+    </section>
+    <div class="main-content ly-hide-medium ly-hide-large">
+        <section class="">
+            <div class="ly-relative" style="overflow: hidden;">
+                <div class="circle-mob">
+                    <img src="/images/Group 5027.svg" alt="" class="ly-image">
+                </div>
+                <div class="small-circle-mob">
+                    <img src="/images/smallcircle.png" alt="" class="ly-image">
+                </div>
+                <div class="about-mob-container">
+                    <div class="about-details-mob">
+                        <h1>About Us</h1>
+                        <p>We are a Bangalore-based space tech startup, aspiring to create a paradigm shift in utilizing
+                        space for the benefit of mankind through enhancing space technology and pursuing space research.
+                        At Lycan Space Research (LYSR), we firmly believe that research in space can bring improvements
+                        to our life on Earth and we are continually pioneering investigations, testing theories and
+                        pushing the boundaries of our knowledge of what lies beyond our planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="small-circle-mob2">
+            <img src="/images/smallcircle.png" alt="" class="ly-image">
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+        var preloader = document.getElementById("loading")
+        function myFunction() {
+            preloader.style.display = 'none';
+        };
+    </script>
+</body>
+
+</html>

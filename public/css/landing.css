@@ -1,0 +1,89 @@
+.landing-text {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  width: 50%;
+}
+
+.landing-text > h1 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #4c387a;
+}
+
+.landing-text > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4c387a;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 36%;
+  right: 16%;
+  z-index: 2;
+  width: 25%;
+}
+
+.smoke {
+  position: absolute;
+  bottom: 28%;
+  right: 4%;
+  z-index: 2;
+  width: 14%;
+}
+/* medium size screen  */
+@media screen and (max-width: 950px) {
+  .landing-text {
+    top: 20%;
+  }
+  .landing-text > h1 {
+    font-size: 45px;
+    letter-spacing: 1px;
+  }
+  .landing-text > p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-text > h1 {
+    font-size: 55px;
+  }
+  .landing-text > p {
+    font-size: 14px;
+  }
+}
+
+/* small size screen */
+
+.landing-text-mob {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-text-mob > h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #4c387a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landing-text-mob > p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4c387a;
+}
+
+@media screen and (max-width: 340px) {
+  .landing-text-mob > p {
+    font-size: 10px;
+  }
+}
