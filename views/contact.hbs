@@ -12,6 +12,23 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <style>
+        .main-logo {
+            position: fixed;
+            width: 7%;
+            top: -1%;
+            line-height: 70px;
+            left: 2%;
+            z-index: 1050;
+        }
+
+        @media screen and (max-width:700) {
+            .main-logo {
+                width: 22%;
+                line-height: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body onload="myFunction()">
@@ -79,7 +96,7 @@
                         </div>
                     </div>
                     <div class="ly-padding-16">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        {{!-- <button class="btn btn-primary" type="submit">Submit form</button> --}}
                     </div>
                 </form>
             </div>
@@ -159,7 +176,7 @@
                     </div>
                 </div>
                 <div class="p-3">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    {{!-- <button class="btn btn-primary" type="submit">Submit form</button> --}}
                 </div>
             </form>
         </div>

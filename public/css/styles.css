@@ -43,8 +43,9 @@
 .main-logo {
   position: fixed;
   width: 7%;
-  top: 10%;
+  top: -1%;
   left: 2%;
+  line-height: 80px;
   z-index: 1050;
 }
 .main_box {
@@ -199,7 +200,8 @@
   }
   .main-logo {
     width: 22%;
-    top: 15%;
+    top: 0%;
+    line-height: 70px;
   }
   .main_box .btn_one i {
     left: 90%;
@@ -218,7 +220,7 @@
 @media screen and (max-width: 350px) {
   .main-logo {
     width: 24%;
-    top: 15%;
+    top: 0%;
   }
 }
 /* navigation ends */
